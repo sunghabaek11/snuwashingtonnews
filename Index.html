@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어르신을 위한 간단한 UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        button {
+            font-size: 22px;
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        button:active {
+            background-color: #3e8e41;
+        }
+        .content {
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        간단한 홈페이지
+    </header>
+    <div class="content">
+        <p>어르신들을 위한 간단한 기능</p>
+        <button onclick="alert('서비스를 시작합니다!')">시작하기</button>
+        <button onclick="alert('뒤로 이동합니다.')">뒤로가기</button>
+    </div>
+</body>
+</html>
