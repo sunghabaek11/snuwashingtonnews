@@ -3,51 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>어르신을 위한 간단한 UI</title>
+    <title>서울대학교 미주 동창회 워싱턴 디씨 지부</title>
     <style>
+        /* 기본 스타일 */
         body {
-            font-family: Arial, sans-serif;
-            font-size: 20px;
-            text-align: center;
+            font-family: "Noto Sans KR", Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
         }
+
+        /* 헤더 스타일 */
         header {
-            background-color: #4CAF50;
+            background-color: #2c3e50;
             color: white;
-            padding: 20px;
-            font-size: 24px;
+            text-align: center;
+            padding: 20px 10px;
         }
-        button {
-            font-size: 22px;
-            padding: 15px 30px;
-            margin: 10px;
-            border: none;
-            border-radius: 5px;
-            background-color: #4CAF50;
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: #dcdcdc;
+        }
+
+        /* 네비게이션 스타일 */
+        nav {
+            background-color: #34495e;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
             color: white;
-            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
         }
-        button:hover {
-            background-color: #45a049;
+        nav ul li a:hover {
+            text-decoration: underline;
         }
-        button:active {
-            background-color: #3e8e41;
-        }
+
+        /* 뉴스레터 섹션 */
         .content {
-            padding: 30px;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* 뉴스레터 카드 스타일 */
+        .newsletter-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            min-width: 250px;
+            padding: 15px;
+            text-align: center;
+        }
+        .newsletter-card h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+            color: #2c3e50;
+        }
+        .newsletter-card a {
+            text-decoration: none;
+            color: white;
+            background-color: #2c3e50;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .newsletter-card a:hover {
+            background-color: #34495e;
+        }
+
+        /* 임원진 소개 섹션 */
+        .executive-section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .executive-section h2 {
+            text-align: center;
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .executive-section p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+        .executive-section span {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        /* 푸터 스타일 */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ecf0f1;
+            color: #7f8c8d;
+            margin-top: 20px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
     <header>
-        간단한 홈페이지
+        <h1>서울대학교 미주 동창회</h1>
+        <p>워싱턴 디씨 지부</p>
     </header>
-    <div class="content">
-        <p>어르신들을 위한 간단한 기능</p>
-        <button onclick="alert('서비스를 시작합니다!')">시작하기</button>
-        <button onclick="alert('뒤로 이동합니다.')">뒤로가기</button>
+    <nav>
+        <ul>
+            <li><a href="#home">홈</a></li>
+            <li><a href="#executive">임원진 소개</a></li>
+        </ul>
+    </nav>
+    <div id="home" class="content">
+        <!-- 모든 뉴스레터 카드 -->
+        <div class="newsletter-card">
+            <h3>2024년 12월 뉴스레터</h3>
+            <a href="https://stib.ee/95LE" target="_blank">읽어보기</a>
+        </div>
+        <div class="newsletter-card">
+            <h3>2024년 8월 뉴스레터</h3>
+            <a href="https://stib.ee/cy9E" target="_blank">읽어보기</a>
+        </div>
+        <div class="newsletter-card">
+            <h3>2024년 6월 뉴스레터</h3>
+            <a href="https://stib.ee/4jxC" target="_blank">읽어보기</a>
+        </div>
+        <div class="newsletter-card">
+            <h3>2024년 4월 뉴스레터</h3>
+            <a href="https://stib.ee/PjtB" target="_blank">읽어보기</a>
+        </div>
+        <div class="newsletter-card">
+            <h3>2024년 2월 뉴스레터</h3>
+            <a href="https://stib.ee/l3wA" target="_blank">읽어보기</a>
+        </div>
+        <div class="newsletter-card">
+            <h3>2023년 12월 뉴스레터</h3>
+            <a href="https://stib.ee/ue7A" target="_blank">읽어보기</a>
+        </div>
+        <div class="newsletter-card">
+            <h3>2023년 10월 뉴스레터</h3>
+            <a href="https://stib.ee/WFA9" target="_blank">읽어보기</a>
+        </div>
+        <div class="newsletter-card">
+            <h3>2023년 8월 뉴스레터</h3>
+            <a href="https://stib.ee/jqJ8" target="_blank">읽어보기</a>
+        </div>
+        <div class="newsletter-card">
+            <h3>2023년 6월 뉴스레터</h3>
+            <a href="https://stib.ee/Vum7" target="_blank">읽어보기</a>
+        </div>
+        <div class="newsletter-card">
+            <h3>2023년 4월 뉴스레터</h3>
+            <a href="https://stib.ee/tUO7" target="_blank">읽어보기</a>
+        </div>
+        <div class="newsletter-card">
+            <h3>2023년 2월 뉴스레터</h3>
+            <a href="https://stib.ee/ahy6" target="_blank">읽어보기</a>
+        </div>
+        <div class="newsletter-card">
+            <h3>2022년 12월 뉴스레터</h3>
+            <a href="https://stib.ee/RNe6" target="_blank">읽어보기</a>
+        </div>
     </div>
+    <div id="executive" class="executive-section">
+        <h2>39대 동창회 임원진</h2>
+        <p><span>회장:</span> 남욱현 (경영 84) - 지부를 대표하고 회무를 통할, 당연직 평의원<br>minamusa@yahoo.com</p>
+        <p><span>상임 부회장:</span> 강형석 (기계 86) - 회장 보좌, 필요시 회장 직무 대행<br>hskang1966@gmail.com</p>
+        <p><span>부회장:</span> 류엽 (법대 89) - 새로운 프로젝트 개발, 입안, 진행<br>yryu@equituslegal.com</p>
+        <p><span>회계:</span> 강병조 (국문 93) - 재무 관리, 회계 보고</p>
+        <p><span>총무팀:</span> 류영준 (전기 02), 김진실 (식공 12), 안정열 (뇌인지과학 11)</p>
+        <p><span>골프팀:</span> 오재환 (물리 85), 이준 (조경 94)</p>
+        <p><span>학술팀:</span> 이영종 (화학 90), 김희범 (건축 15)</p>
+        <p><span>뉴스레터팀:</span> 백승하 (물리 11), 박기현 (외교 08)<br>snuwashingtonnews@gmail.com</p>
+        <p><span>감사팀:</span> 이우진 (농화학 86)</p>
+    </div>
+    <footer>
+        Copyright © 2025 SNUAA Washington, All rights reserved.
+    </footer>
 </body>
 </html>
